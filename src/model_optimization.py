@@ -45,7 +45,7 @@ model = sm.Unet(
   #encoder_weights='imagenet'
 )
 
-# define optomizer
+# define optimizer
 optim = keras.optimizers.Adam(LR)
 
 # Segmentation models losses can be combined together by '+' 
@@ -55,7 +55,7 @@ focal_loss = sm.losses.BinaryFocalLoss() if n_classes == 1 else sm.losses.Catego
 total_loss = dice_loss + (1 * focal_loss)
 metrics = [sm.metrics.IOUScore(threshold=0.5), sm.metrics.FScore(threshold=0.5)]
 
-# compile keras model with defined optimozer, loss and metrics
+# compile keras model with defined optimizer, loss and metrics
 model.compile(optim, total_loss, metrics)
 
 # Dataset for train images

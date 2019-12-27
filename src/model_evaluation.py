@@ -24,7 +24,7 @@ if __name__ == "__main__":
     BATCH_SIZE = 1
     CLASSES = ['forest','dist']
     LR = 0.0001
-    EPOCHS = 5
+    #EPOCHS = 5
     DATA_DIR = './data/synth/'
     
     x_test_dir = os.path.join(DATA_DIR, 'images')
@@ -44,7 +44,7 @@ if __name__ == "__main__":
       #encoder_weights='imagenet'
     )
     
-    # define optomizer
+    # define optimizer
     optim = keras.optimizers.Adam(LR)
     
     # Segmentation models losses can be combined together by '+' and scaled by integer or float factor
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     total_loss = dice_loss + (1 * focal_loss)
     metrics = [sm.metrics.IOUScore(threshold=0.5), sm.metrics.FScore(threshold=0.5)]
     
-    # compile keras model with defined optimozer, loss and metrics
+    # compile keras model with defined optimizer, loss and metrics
     model.compile(optim, total_loss, metrics)
 
     # load weights
