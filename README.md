@@ -11,7 +11,7 @@ For full details on the methodology I refer to the above manuscript, or the docu
 
 ## Licenses & citation
 
-I'm indebted to the [segmentation models](https://github.com/qubvel/segmentation_models) python package and examples from which I extensively borrowed code. To be inline with licensing all code is distributed under an MIT license. All other (image) data, and the resulting model (forest_model.h5) is distributed under a CC-BY-NC-ND license.
+I'm indebted to the [segmentation models](https://github.com/qubvel/segmentation_models) python package and examples from which I extensively borrowed code. To be inline with licensing all code is distributed under an MIT license. All other (image) data, and the resulting model (forest_model.h5) is distributed under a AGPLv3 license.
 
 ## Acknowledgements
 
