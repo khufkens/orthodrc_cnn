@@ -10,10 +10,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import albumentations as A
 import segmentation_models as sm
-
-
 from data_prep_synth import *
+
+# Set to fastest location / drive you have
+# my case, dumped data on the desktop
 DATA_DIR = '/home/khufkens/Desktop/data/'
+
 x_train_dir = os.path.join(DATA_DIR, 'images')
 y_train_dir = os.path.join(DATA_DIR, 'labels')
 
