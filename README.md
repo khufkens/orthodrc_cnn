@@ -4,8 +4,8 @@ This is the code used to train the model (src/forest_model.h5) to classify fores
 
 When using the model cite the model / code / data as:
 
-`Hufkens et al. 2020. Historical aerial surveys map long-term changes of
-forest cover and structure in the central Congo Basin. Submitted.`
+> [Hufkens et al. 2020. Historical aerial surveys map long-term changes of
+forest cover and structure in the central Congo Basin. Remote Sensing, 12, 638.](https://www.mdpi.com/2072-4292/12/4/638)
 
 For full details on the methodology I refer to the above manuscript, or the documentation provided in [the repository website](https://khufkens.github.io/orthodrc_cnn/).
 
